@@ -1,0 +1,66 @@
+.cards {
+    /* max-width: 100em; */
+    max-width: 1200px;
+
+    margin: 0 auto;
+    display: flex;
+    padding: 2em;
+    min-width: 360px;
+    gap: 1.5em;
+}
+
+.cards article,
+.cards article .card-picture {
+    display: block;
+
+    border-top-left-radius: 1.2em;
+    border-top-right-radius: 1.2em;
+    /* border-radius: 1.2em; */
+    overflow: hidden;
+
+    min-width: 140px;
+}
+
+.cards article {
+    border-bottom-left-radius: 1.2em;
+    border-bottom-right-radius: 1.2em;
+}
+
+.cards article .card-picture img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.cards article {
+    /* Just flex-basis: 33%; instead of flex: 1 1 33.3%; MIGHT! work just the same.*/
+    flex: 1 1 33.3%;
+    background: #81af81;
+    color: black;
+}
+
+.cards article .face-elements {
+    padding: 1.5em;
+    text-align: center;
+}
+
+.cards article .face-elements p {
+    margin: 1em 0 1em 0;
+}
+
+.cards article .face-elements h3 {
+    font-size: large;
+}
+
+.cards article .card-button {
+    color: white;
+
+    display: inline-block;
+
+    text-decoration: none;
+    background: #8b9e48;
+    border: 1px solid #c32c7f;
+    outline: 1px solid #ffffff;
+    padding: 0.2em 1em;
+    border-radius: 2em;
+}

@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+}
+
+/* html {
+  font: 12px/1.5 Poppins, sans-serif;
+} */
+
+body {
+  background-color: rgb(92, 91, 91);
+}
+
+#welcome {
+  text-align: center;
+  margin: 30px;
+}

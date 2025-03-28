@@ -1,0 +1,90 @@
+import { useState } from 'react';
+
+
+export default function Calculator() {
+    const numBtnHandler = (e) => {
+        if (operator == '...') {
+            if (operantOne == '...') {
+                setOperantOne(e.target.textContent);
+            } else {
+                setOperantOne(operantOne + e.target.textContent);
+            }
+        } else {
+            if (result == '') {
+                if (operantTwo == '...') {
+                    setOperantTwo(e.target.textContent);
+                } else {
+                    setOperantTwo(operantTwo + e.target.textContent);
+                }
+            }
+        }
+    }
+
+    const operatorBtnHandler = (e) => {
+        setOperator(e.target.textContent);
+    }
+
+    const equalHandler = () => {
+        let res;
+        let one = Number(operantOne);
+        let two = Number(operantTwo);
+
+        if (operator == '+') { res = one + two; }
+        else if (operator == '-') { res = one - two; }
+        else if (operator == '*') { res = one * two; }
+        else if (operator == '/') { res = one / two; }
+
+        setResult(res);
+    }
+
+    const backHandler = () => {
+        if (operator == '...') {
+            setOperantOne(operantOne.substring(0, operantOne.length - 1))
+        } else {
+            if (result == '') {
+                setOperantTwo(operantTwo.substring(0, operantTwo.length - 1));
+            }
+        }
+    }
+
+    const clearAllHandler = () => {
+        setOperantOne('...');
+        setOperantTwo('...');
+        setOperator('...');
+        setResult('');
+    }
+
+    const [operantOne, setOperantOne] = useState('...');
+    const [operator, setOperator] = useState('...');
+    const [operantTwo, setOperantTwo] = useState('...');
+    const [result, setResult] = useState('');
+
+    const digits = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'];
+    const operations = ['+', '-', '*', '/'];
+
+    return (
+        <>
+            <div className='calculator'>
+                <h1 id='calc-header'>First Grader Clculator</h1>
+
+                <div id='Operant1'>Operant One: {operantOne}</div>
+                <div id='Operator'>Operator: {operator}</div>
+                <div id='Operant2'>Operant Two: {operantTwo}</div>
+
+                <div className='btns'>
+                    {/* <button onClick={numBtnHandler}>1</button> */}
+                    <div className='digitBtns'>{digits.map(digit => <button onClick={numBtnHandler} key={digit}>{digit}</button>)}</div>
+
+                    <div className='operationsBtns'>{operations.map(oper => <button onClick={operatorBtnHandler} key={oper}>{oper}</button>)}</div>
+
+                    <button onClick={backHandler}>Back</button>
+                    <button onClick={clearAllHandler}>CA</button>
+
+                    <button onClick={equalHandler}>=</button>
+                </div>
+
+                <h2 id='Result'>Result: {result}</h2>
+            </div>
+        </>
+    );
+}

@@ -1,0 +1,48 @@
+#Operant1 {
+    color: yellow;
+}
+
+#Operant2 {
+    color: yellow;
+
+}
+
+#Operator {
+    color: rgb(32, 190, 196);
+}
+
+#Result {
+    color: greenyellow;
+}
+
+#calc-header {
+    font-size: x-large;
+    color: red;
+}
+
+.calculator {
+    width: 250px;
+    /* min-width: 360px; */
+    display: inline-block;
+}
+
+.calculator button {
+    border-radius: 8px;
+    border: 1px solid;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: orange;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+
+button:hover {
+    border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+}

@@ -1,0 +1,24 @@
+#container-top {
+    background-color: blue;
+    /* display: flex; */
+}
+
+#container-nav {
+    background-color: red;
+    display: flex;
+    justify-content: right;
+
+    /* max-width: 1200px; */
+    /* margin: 0 auto; */
+}
+
+header {
+    font-size: large;
+}
+
+
+#welcome {
+    font-size: 2.5em;
+    font-style: oblique;
+    color: blue;
+}
