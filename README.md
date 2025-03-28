@@ -8,4 +8,4 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 
-To get the Project to work one needs a 'npm i' globally for the Project. Then the Client and Server are opened separately in two integrated Terminals. The Client integrated terminal needs 'npm run dev' and the Server integrated terminal needs 'node server.js'.
+To get the Project to work one needs a 'npm i' globally for the Project. Then the Client and Server are opened separately in two integrated Terminals. The Client integrated terminal needs 'npm run dev' and the Server integrated terminal needs 'node server.js'!!!
