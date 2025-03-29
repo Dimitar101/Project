@@ -1,0 +1,20 @@
+{
+    "1": {
+        "gameName": "Calculator",
+        "img": "../../src/assets/calc.jpg",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "path": "/calculator"
+    },
+    "2": {
+        "gameName": "Chessling",
+        "img": "../../src/assets/picture1.jpg",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "path": "/chessling"
+    },
+    "3": {
+        "gameName": "Digital-2",
+        "img": "../../src/assets/picture1.jpg",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "path": ""
+    }
+}
