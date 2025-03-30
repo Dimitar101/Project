@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router';
+import { Link, NavLink } from 'react-router';
 import { useEffect, useState } from "react";
 import '../app-css/card.css'
 
@@ -14,11 +14,16 @@ export default function Cards() {
                 console.log(err.message);
             });
     }, []);
-    
+
 
     return (
         <>
-            <h1 id='welcome'>Welcome</h1>
+            <h1 id='welcome'>
+                <Link to='welcome' style={{ textDecoration: 'none', color: '#81af81' }}>
+                    Welcome
+                </Link>
+            </h1>
+
 
             <div className="cards">
                 {
