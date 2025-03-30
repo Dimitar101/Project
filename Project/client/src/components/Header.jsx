@@ -30,7 +30,6 @@ export default function Header() {
                                 <NavLink
                                     key={item.name}
                                     to={item.path}
-                                // style={({ isActive }) => isActive ? { color: 'oklch(0.511 0.262 276.966)' } : {}}
                                 >
                                     {item.name}
                                 </NavLink>
