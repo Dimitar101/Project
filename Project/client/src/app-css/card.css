@@ -1,7 +1,5 @@
 .cards {
-    /* max-width: 100em; */
     max-width: 1200px;
-
     margin: 0 auto;
     display: flex;
     padding: 2em;
@@ -33,7 +31,6 @@
 }
 
 .cards article {
-    /* Just flex-basis: 33%; instead of flex: 1 1 33.3%; MIGHT! work just the same.*/
     flex: 1 1 33.3%;
     background: #81af81;
     color: black;
@@ -63,4 +60,9 @@
     outline: 1px solid #ffffff;
     padding: 0.2em 1em;
     border-radius: 2em;
+}
+
+#welcome {
+    text-align: center;
+    margin: 30px;
 }
