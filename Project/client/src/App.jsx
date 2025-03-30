@@ -17,6 +17,8 @@ import Header from './components/Header'
 import Home from './components/Home'
 import Calculator from './components/Calculator'
 import Login from './components/Login'
+import Ch from './components/Ch'
+import Welcome from './components/Welcome'
 
 
 export default function App() {
@@ -28,7 +30,9 @@ export default function App() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/calculator" element={<Calculator />} />
+                <Route path="/chessling" element={<Ch />} />
                 <Route path="/login" element={<Login />} />
+                <Route path="/welcome" element={<Welcome />} />
             </Routes>
         </>
     );
