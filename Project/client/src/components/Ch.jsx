@@ -2,31 +2,26 @@ import { useState, useEffect } from "react";
 
 
 export default function Ch() {
+    const [board, setBoard] = useState([]);
+    const [clicked, setClicked] = useState('');
 
-    const sqrClick = (e) => {
-        e.target.className = "square red";
-    }
+    useEffect(() => {
+        fetch('http://localhost:3030/jsonstore/squares')
+            .then(res => res.json())
+            .then(data => {
+                const result = Object.values(data);
+                setBoard(result);
+            })
+            .catch(err => {
+                console.log(err.message);
+            });
+    }, []);
 
+    const sqrClick = (sqrId, sqrAlgebraicName) => {
+        setClicked(sqrAlgebraicName);
 
-
-    function coloring(x) {
-        // if (x % 2 == 0) {
-        //     return "square white";
-        // } else {
-        //     return "square black";
-        // }
-        return x % 2 == 0 ? "square white" : "square black";
-    }
-
-    const board = [];
-    for (let i = 0; i < 8; i++) {
-        const row = [];
-        for (let j = 0; j < 8; j++) {
-            i % 2 == 0 ? j += 1 : j;
-            row.push(<div className={coloring(j)} onClick={sqrClick} key={i + j}></div>);
-            i % 2 == 0 ? j = 1 : j;
-        }
-        board.push(<div className="row" key={i}>{row}</div>)
+        setBoard(prev => prev.map(SQR => SQR._id === sqrId ? { ...SQR, isMarked: !SQR.isMarked } : SQR));
+        setBoard(prev => prev.map(SQR => SQR._id !== sqrId ? { ...SQR, isMarked: false } : SQR));
     }
 
 
@@ -36,17 +31,22 @@ export default function Ch() {
             <hr />
 
             <div className="form-and-pic">
-                <div>1</div>
-                <div>2</div>
+                <div>Guess the Algebraic notation of a square you click.</div>
+                <div>You clicked square: {clicked}</div>
             </div>
 
+
             <div className="chessling">
-                {board}
+                <div className="row">
+                    {board.slice(0, 8).map(sqr => <div className={sqr.isMarked ? 'square red' : sqr.colour} onClick={() => sqrClick(sqr._id, sqr.algebraicName)} key={sqr._id}></div>)}
+                </div>
+                <div className="row">
+                    {board.slice(8, 16).map(sqr => <div className={sqr.isMarked ? 'square red' : sqr.colour} onClick={() => sqrClick(sqr._id, sqr.algebraicName)} key={sqr._id}></div>)}
+                </div>
+                <div className="row">
+                    {board.slice(16, 24).map(sqr => <div className={sqr.isMarked ? 'square red' : sqr.colour} onClick={() => sqrClick(sqr._id, sqr.algebraicName)} key={sqr._id}></div>)}
+                </div>
             </div>
         </>
     );
 }
-
-
-
-{/* <div className={true ? "square white" : "square black"}></div> */ }
