@@ -6,7 +6,7 @@ export default function WelcomeSubject(
         _id,
         subject,
         isPractised,
-        onStatusChange,
+        onStatusChangeAfterToggleBtnClick,
     }
 ) {
 
@@ -17,7 +17,7 @@ export default function WelcomeSubject(
             <td>
                 <button
                     className="check-studies-btn"
-                    onClick={() => onStatusChange(_id)}
+                    onClick={() => onStatusChangeAfterToggleBtnClick(_id, subject, isPractised)}
                 >Toggle </button>
             </td>
         </tr>
