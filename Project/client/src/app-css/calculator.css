@@ -14,13 +14,14 @@
 }
 
 .Result {
-    color: greenyellow;
+    color: rgb(201, 135, 12);
     font-size: xx-large;
 }
 
 #calc-header {
     font-size: xx-large;
-    color: red;
+    font-style: italic;
+    color: #007bff;
     display: flex;
     justify-content: center;
     padding: 1em;
@@ -65,4 +66,9 @@ button:hover {
 button:focus,
 button:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
+}
+
+.calc-form {
+    display: flex;
+    justify-content: space-around;
 }

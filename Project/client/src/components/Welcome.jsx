@@ -7,7 +7,7 @@ export default function Welcome() {
     const [subjectCheck, setSubjectCheck] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3030/jsonstore/subjects')
+        fetch(url)
             .then(res => res.json())
             .then(data => {
                 const result = Object.values(data);
@@ -38,7 +38,7 @@ export default function Welcome() {
 
     return (
         <>
-            <h1 className="welcome-heading">Have you practised today?</h1>
+            <h1 className="welcome-heading">Have you practised?</h1>
             <hr />
 
             <div className="table-wrapper">

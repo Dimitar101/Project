@@ -2,7 +2,7 @@
     "subject_1": {
         "_id": "subject_1",
         "subject": "Aritmetics",
-        "isPractised": true
+        "isPractised": false
     },
     "subject_2": {
         "_id": "subject_2",

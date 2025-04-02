@@ -7,14 +7,14 @@
     },
     "2": {
         "gameName": "Chessling",
-        "img": "../../src/assets/picture1.jpg",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "img": "../../src/assets/ch.jpg",
+        "description": "Learn the algebraic Chess notation square names by practicing. Click a square and see the name. View is from White perspective.",
         "path": "/chessling"
     },
     "3": {
-        "gameName": "Digital-2",
-        "img": "../../src/assets/picture1.jpg",
+        "gameName": "Geo",
+        "img": "../../src/assets/geo.jpg",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        "path": ""
+        "path": "/geo"
     }
 }

@@ -11,6 +11,8 @@ import './app-css/yinyang.css'
 import './app-css/yinyangGreen.css'
 import './app-css/login.css'
 import './app-css/calculator.css'
+import './app-css/welcome.css'
+import './app-css/ch.css'
 
 
 import Header from './components/Header'
@@ -19,6 +21,7 @@ import Calculator from './components/Calculator'
 import Login from './components/Login'
 import Ch from './components/Ch'
 import Welcome from './components/Welcome'
+import Geo from './components/Geo'
 
 
 export default function App() {
@@ -31,6 +34,7 @@ export default function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/calculator" element={<Calculator />} />
                 <Route path="/chessling" element={<Ch />} />
+                <Route path="/geo" element={<Geo />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/welcome" element={<Welcome />} />
             </Routes>

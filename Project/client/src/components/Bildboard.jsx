@@ -8,7 +8,6 @@ export default function Bildboard() {
             <div id="bildboard-container">
                 <img src={bildboard} />
             </div>
-            {/* <img src={bildboard} /> */}
         </>
     );
 }

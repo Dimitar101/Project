@@ -2,8 +2,7 @@ export default function Geo() {
 
     return (
         <>
-            <p>Under</p>
-            <p>construction</p>
+            <h1>Under construction</h1>
         </>
     );
 }

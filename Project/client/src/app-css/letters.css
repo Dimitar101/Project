@@ -1,18 +1,5 @@
-/* @media screen and (min-width: 600px) {
-    .letters {
-        color: green;
-    }
-} */
-
-/* @media (orientation: portrait) {
-    .letters {
-        color: green;
-    }
-} */
-
-
 .letters {
-    color: orange;
+    color: #81af81;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
