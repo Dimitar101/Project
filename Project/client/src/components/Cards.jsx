@@ -7,12 +7,22 @@ export default function Cards() {
     const [cards, setCards] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3030/jsonstore/cards')
+        const controller = new AbortController();
+        const signal = controller.signal;
+
+        fetch('http://localhost:3030/jsonstore/cards', { signal })
             .then(res => res.json())
             .then(data => setCards(Object.values(data)))
-            .catch(err => {
-                console.log(err.message);
+            .catch(error => {
+                if (error.name === 'AbortError') {
+                    console.log('Fetching data was aborted');
+                } else {
+                    console.error(error);
+                }
             });
+        return () => {
+            controller.abort();
+        }
     }, []);
 
 
