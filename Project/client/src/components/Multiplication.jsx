@@ -1,7 +1,10 @@
 import { useState } from 'react';
 
 
-export default function Multiplication() {
+export default function Multiplication(prop) {
+    // const userData = JSON.parse(sessionStorage.getItem('userData'));
+    const userData = prop.currState;
+
     const [multiplicand, setMultiplicand] = useState('...');
     const [multiplier, setMultiplier] = useState('...');
     const [product, setProduct] = useState('');
@@ -26,25 +29,29 @@ export default function Multiplication() {
 
     return (
         <>
-            <div className='calculator-wrapper'>
-                <div className='multiplicand'>{multiplicand}</div>
-                <div className='multiplicationOperation'>*</div>
-                <div className='multiplier'>{multiplier}</div>
+            {userData ?
+                <div className='calculator-wrapper'>
+                    <div className='multiplicand'>{multiplicand}</div>
+                    <div className='multiplicationOperation'>*</div>
+                    <div className='multiplier'>{multiplier}</div>
 
-                <div className='calculator'>
-                    <div className='btns'>
-                        <div className='digitBtns'>{digits.map(digit => <button onClick={numBtnHandler} key={digit}>{digit}</button>)}</div>
-                        <br />
-                        <div className='clearOperation'>
+                    <div className='calculator'>
+                        <div className='btns'>
+                            <div className='digitBtns'>{digits.map(digit => <button onClick={numBtnHandler} key={digit}>{digit}</button>)}</div>
                             <br />
-                            <button onClick={clearAllHandler}>Clear</button>
+                            <div className='clearOperation'>
+                                <br />
+                                <button onClick={clearAllHandler}>Clear</button>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div className='product Result'>product:</div>
-                <div className='product Result'>{product}</div>
-            </div>
+                    <div className='product Result'>product:</div>
+                    <div className='product Result'>{product}</div>
+                </div> :
+
+                <p className='multi-log-in-warning'>You need to log in with an account to access Multiplication practicing. In the mean time basic Arithmetic calculator is free to use.</p>}
         </>
     );
 }
+// #1111111
