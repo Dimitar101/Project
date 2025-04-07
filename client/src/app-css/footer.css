@@ -1,0 +1,13 @@
+footer p {
+    color: blue;
+    text-align: center;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:small;
+    font-size: 20px;
+}
+
+#container-footer {
+    background-color: orange;
+    margin-top: 10px;
+}

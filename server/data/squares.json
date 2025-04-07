@@ -1,0 +1,386 @@
+{
+    "a8": {
+        "_id": 81,
+        "algebraicName": "a8",
+        "colour": "square white",
+        "isMarked": false
+    },
+    "b8": {
+        "_id": 82,
+        "algebraicName": "b8",
+        "colour": "square black",
+        "isMarked": false
+    },
+    "c8": {
+        "_id": 83,
+        "algebraicName": "c8",
+        "colour": "square white",
+        "isMarked": false
+    },
+    "d8": {
+        "_id": 84,
+        "algebraicName": "d8",
+        "colour": "square black",
+        "isMarked": false
+    },
+    "e8": {
+        "_id": 85,
+        "algebraicName": "e8",
+        "colour": "square white",
+        "isMarked": false
+    },
+    "f8": {
+        "_id": 86,
+        "algebraicName": "f8",
+        "colour": "square black",
+        "isMarked": false
+    },
+    "g8": {
+        "_id": 87,
+        "algebraicName": "g8",
+        "colour": "square white",
+        "isMarked": false
+    },
+    "h8": {
+        "_id": 88,
+        "algebraicName": "h8",
+        "colour": "square black",
+        "isMarked": false
+    },
+    "a7": {
+        "_id": 71,
+        "algebraicName": "a7",
+        "colour": "square black",
+        "isMarked": false
+    },
+    "b7": {
+        "_id": 72,
+        "algebraicName": "b7",
+        "colour": "square white",
+        "isMarked": false
+    },
+    "c7": {
+        "_id": 73,
+        "algebraicName": "c7",
+        "colour": "square black",
+        "isMarked": false
+    },
+    "d7": {
+        "_id": 74,
+        "algebraicName": "d7",
+        "colour": "square white",
+        "isMarked": false
+    },
+    "e7": {
+        "_id": 75,
+        "algebraicName": "e7",
+        "colour": "square black",
+        "isMarked": false
+    },
+    "f7": {
+        "_id": 76,
+        "algebraicName": "f7",
+        "colour": "square white",
+        "isMarked": false
+    },
+    "g7": {
+        "_id": 77,
+        "algebraicName": "g7",
+        "colour": "square black",
+        "isMarked": false
+    },
+    "h7": {
+        "_id": 78,
+        "algebraicName": "h7",
+        "colour": "square white",
+        "isMarked": false
+    },
+    "a6": {
+        "_id": 61,
+        "algebraicName": "a6",
+        "colour": "square white",
+        "isMarked": false
+    },
+    "b6": {
+        "_id": 62,
+        "algebraicName": "b6",
+        "colour": "square black",
+        "isMarked": false
+    },
+    "c6": {
+        "_id": 63,
+        "algebraicName": "c6",
+        "colour": "square white",
+        "isMarked": false
+    },
+    "d6": {
+        "_id": 64,
+        "algebraicName": "d6",
+        "colour": "square black",
+        "isMarked": false
+    },
+    "e6": {
+        "_id": 65,
+        "algebraicName": "e6",
+        "colour": "square white",
+        "isMarked": false
+    },
+    "f6": {
+        "_id": 66,
+        "algebraicName": "f6",
+        "colour": "square black",
+        "isMarked": false
+    },
+    "g6": {
+        "_id": 67,
+        "algebraicName": "g6",
+        "colour": "square white",
+        "isMarked": false
+    },
+    "h6": {
+        "_id": 68,
+        "algebraicName": "h6",
+        "colour": "square black",
+        "isMarked": false
+    },
+    "a5": {
+        "_id": 51,
+        "algebraicName": "a5",
+        "colour": "square black",
+        "isMarked": false
+    },
+    "b5": {
+        "_id": 52,
+        "algebraicName": "b5",
+        "colour": "square white",
+        "isMarked": false
+    },
+    "c5": {
+        "_id": 53,
+        "algebraicName": "c5",
+        "colour": "square black",
+        "isMarked": false
+    },
+    "d5": {
+        "_id": 54,
+        "algebraicName": "d5",
+        "colour": "square white",
+        "isMarked": false
+    },
+    "e5": {
+        "_id": 55,
+        "algebraicName": "e5",
+        "colour": "square black",
+        "isMarked": false
+    },
+    "f5": {
+        "_id": 56,
+        "algebraicName": "f5",
+        "colour": "square white",
+        "isMarked": false
+    },
+    "g5": {
+        "_id": 57,
+        "algebraicName": "g5",
+        "colour": "square black",
+        "isMarked": false
+    },
+    "h5": {
+        "_id": 58,
+        "algebraicName": "h5",
+        "colour": "square white",
+        "isMarked": false
+    },
+    "a4": {
+        "_id": 41,
+        "algebraicName": "a4",
+        "colour": "square white",
+        "isMarked": false
+    },
+    "b4": {
+        "_id": 42,
+        "algebraicName": "b4",
+        "colour": "square black",
+        "isMarked": false
+    },
+    "c4": {
+        "_id": 43,
+        "algebraicName": "c4",
+        "colour": "square white",
+        "isMarked": false
+    },
+    "d4": {
+        "_id": 44,
+        "algebraicName": "d4",
+        "colour": "square black",
+        "isMarked": false
+    },
+    "e4": {
+        "_id": 45,
+        "algebraicName": "e4",
+        "colour": "square white",
+        "isMarked": false
+    },
+    "f4": {
+        "_id": 46,
+        "algebraicName": "f4",
+        "colour": "square black",
+        "isMarked": false
+    },
+    "g4": {
+        "_id": 47,
+        "algebraicName": "g4",
+        "colour": "square white",
+        "isMarked": false
+    },
+    "h4": {
+        "_id": 48,
+        "algebraicName": "h4",
+        "colour": "square black",
+        "isMarked": false
+    },
+    "a3": {
+        "_id": 31,
+        "algebraicName": "a3",
+        "colour": "square black",
+        "isMarked": false
+    },
+    "b3": {
+        "_id": 32,
+        "algebraicName": "b3",
+        "colour": "square white",
+        "isMarked": false
+    },
+    "c3": {
+        "_id": 33,
+        "algebraicName": "c3",
+        "colour": "square black",
+        "isMarked": false
+    },
+    "d3": {
+        "_id": 34,
+        "algebraicName": "d3",
+        "colour": "square white",
+        "isMarked": false
+    },
+    "e3": {
+        "_id": 35,
+        "algebraicName": "e3",
+        "colour": "square black",
+        "isMarked": false
+    },
+    "f3": {
+        "_id": 36,
+        "algebraicName": "f3",
+        "colour": "square white",
+        "isMarked": false
+    },
+    "g3": {
+        "_id": 37,
+        "algebraicName": "g3",
+        "colour": "square black",
+        "isMarked": false
+    },
+    "h3": {
+        "_id": 38,
+        "algebraicName": "h3",
+        "colour": "square white",
+        "isMarked": false
+    },
+    "a2": {
+        "_id": 21,
+        "algebraicName": "a2",
+        "colour": "square white",
+        "isMarked": false
+    },
+    "b2": {
+        "_id": 22,
+        "algebraicName": "b2",
+        "colour": "square black",
+        "isMarked": false
+    },
+    "c2": {
+        "_id": 23,
+        "algebraicName": "c2",
+        "colour": "square white",
+        "isMarked": false
+    },
+    "d2": {
+        "_id": 24,
+        "algebraicName": "d2",
+        "colour": "square black",
+        "isMarked": false
+    },
+    "e2": {
+        "_id": 25,
+        "algebraicName": "e2",
+        "colour": "square white",
+        "isMarked": false
+    },
+    "f2": {
+        "_id": 26,
+        "algebraicName": "f2",
+        "colour": "square black",
+        "isMarked": false
+    },
+    "g2": {
+        "_id": 27,
+        "algebraicName": "g2",
+        "colour": "square white",
+        "isMarked": false
+    },
+    "h2": {
+        "_id": 28,
+        "algebraicName": "h2",
+        "colour": "square black",
+        "isMarked": false
+    },
+    "a1": {
+        "_id": 11,
+        "algebraicName": "a1",
+        "colour": "square black",
+        "isMarked": false
+    },
+    "b1": {
+        "_id": 12,
+        "algebraicName": "b1",
+        "colour": "square white",
+        "isMarked": false
+    },
+    "c1": {
+        "_id": 13,
+        "algebraicName": "c1",
+        "colour": "square black",
+        "isMarked": false
+    },
+    "d1": {
+        "_id": 14,
+        "algebraicName": "d1",
+        "colour": "square white",
+        "isMarked": false
+    },
+    "e1": {
+        "_id": 15,
+        "algebraicName": "e1",
+        "colour": "square black",
+        "isMarked": false
+    },
+    "f1": {
+        "_id": 16,
+        "algebraicName": "f1",
+        "colour": "square white",
+        "isMarked": false
+    },
+    "g1": {
+        "_id": 17,
+        "algebraicName": "g1",
+        "colour": "square black",
+        "isMarked": false
+    },
+    "h1": {
+        "_id": 18,
+        "algebraicName": "h1",
+        "colour": "square white",
+        "isMarked": false
+    }
+}

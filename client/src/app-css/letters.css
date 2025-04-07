@@ -1,0 +1,11 @@
+.letters {
+    color: #81af81;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-width: 360px;
+}
+
+.letters p {
+    font-size: 50px;
+}

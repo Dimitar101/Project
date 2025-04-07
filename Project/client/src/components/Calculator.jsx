@@ -3,7 +3,7 @@ import Arithmetic from './Arithmetic'
 import Multiplication from './Multiplication'
 
 
-export default function Calculator(prop) {
+export default function Calculator() {
     const [values, setValues] = useState({
         arithmeticName: true,
         multiplicationName: false,
@@ -54,7 +54,7 @@ export default function Calculator(prop) {
             </form>
 
             {values.arithmeticName && <Arithmetic />}
-            {values.multiplicationName && <Multiplication currState={prop.currState}/>}
+            {values.multiplicationName && <Multiplication />}
         </>
     );
 }

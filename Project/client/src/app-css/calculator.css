@@ -1,18 +1,14 @@
-.multiplicand,
-.Operant1 {
+#Operant1 {
     color: yellow;
     font-size: xx-large;
 }
 
-.multiplier,
-.Operant2 {
+#Operant2 {
     color: yellow;
     font-size: xx-large;
 }
 
-
-.multiplicationOperation,
-.Operator {
+#Operator {
     color: rgb(32, 190, 196);
     font-size: xx-large;
 }
@@ -75,17 +71,4 @@ button:focus-visible {
 .calc-form {
     display: flex;
     justify-content: space-around;
-    min-width: 500px;
-}
-
-.clearOperation {
-    display: flex;
-    justify-content: center;
-}
-
-.multi-log-in-warning {
-    color: pink;
-    text-align: center;
-    font-size: xx-large;
-    margin-top: 20px;
 }

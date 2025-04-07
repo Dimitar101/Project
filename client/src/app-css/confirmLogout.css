@@ -1,0 +1,40 @@
+.confirm-wrapp {
+    font-family: Arial, sans-serif;
+    background-color: #c8c8ce;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+
+.confirm-p {
+    font-size: 25px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.confirm-btn {
+    background-color: #FF4B5C;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.confirm-btn:hover {
+    background-color: #E0414D;
+}
+
+
+.confirm-btn:focus {
+    outline: none;
+}

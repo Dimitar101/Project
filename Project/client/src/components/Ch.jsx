@@ -38,7 +38,7 @@ export default function Ch() {
             <div className="answer">{clicked}</div>
 
             <div className="chessling">
-                <ChItems sqrClick={sqrClick} board={board} />
+                <ChItems sqrClick={sqrClick} board={board}/>
             </div>
         </>
     );

@@ -5,7 +5,7 @@ const url = 'http://localhost:3030/jsonstore/subjects';
 
 export default function Welcome() {
     const [subjectCheck, setSubjectCheck] = useState([]);
-    
+
     useEffect(() => {
         fetch(url)
             .then(res => res.json())
@@ -17,6 +17,7 @@ export default function Welcome() {
                 console.log(err.message);
             });
     }, []);
+
 
     async function statusChangeHandler(subjId, subject_C, isPractised_C) {
         setSubjectCheck(prev => prev.map(sub => sub._id === subjId ? { ...sub, isPractised: !sub.isPractised } : sub));
