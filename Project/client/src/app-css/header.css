@@ -1,5 +1,7 @@
 #container-top {
     background-color: #262626;
+    display: flex;
+    justify-content: space-between;
 }
 
 #container-nav {
@@ -10,4 +12,10 @@
 
 header {
     font-size: large;
+}
+
+.who {
+    margin-right: 20px;
+    margin-top: 10px;
+    color: #81af81;
 }

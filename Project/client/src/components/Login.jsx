@@ -1,23 +1,51 @@
 import { useState } from "react";
+import { useNavigate } from "react-router";
 
 
-export default function Login() {
+export default function Login(prop) {
     const [pending, setPending] = useState(false);
-    const [username, setUsername] = useState('');
+    const [email, setemail] = useState('');
     const [password, setPassword] = useState('');
+
+    const navigate = useNavigate();
+
 
     const submitHandler = async (e) => {
         e.preventDefault();
         setPending(true);
 
-        console.log({ username, password });
+        if (!email || !password) {
+            setPending(false);
+            return alert('Error: Email or Password missing field!');
+        }
+
+        const response = await fetch('http://localhost:3030/users/login', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email, password }),
+        });
+
+        if (!response.ok) {
+            const error = await response.json();
+            setPending(false);
+            return alert('Error signing in:\n' + error.message);
+        }
+
+        const data = await response.json();
+
+        const userData = { email: data.email, accessToken: data.accessToken, userID: data._id };
+        // sessionStorage.setItem('userData', JSON.stringify(userData));
+
         setPending(false);
+        prop.setCurrState(userData);
+        navigate('/');
     }
 
-    const usernameChangeHandler = (e) => {
-        // console.log(e.target.value);
-        setUsername(e.target.value);
+
+    const emailChangeHandler = (e) => {
+        setemail(e.target.value);
     }
+
     const passwordChangeHandler = (e) => {
         setPassword(e.target.value);
     }
@@ -27,13 +55,13 @@ export default function Login() {
         <>
             <form onSubmit={submitHandler}>
                 <div>
-                    <label htmlFor="username">Username:</label>
+                    <label htmlFor="email">Email:</label>
                     <input
                         type="text"
-                        id="username"
-                        name="usernameName"
-                        onChange={usernameChangeHandler}
-                        value={username}
+                        id="email"
+                        name="emailName"
+                        onChange={emailChangeHandler}
+                        value={email}
                     />
                 </div>
 
@@ -57,3 +85,4 @@ export default function Login() {
         </>
     );
 }
+//111111111

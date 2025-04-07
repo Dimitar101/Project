@@ -70,9 +70,9 @@ export default function Arithmetic() {
     return (
         <>
             <div className='calculator-wrapper'>
-                <div id='Operant1'>{operantOne}</div>
-                <div id='Operator'>{operator}</div>
-                <div id='Operant2'>{operantTwo}</div>
+                <div className='Operant1'>{operantOne}</div>
+                <div className='Operator'>{operator}</div>
+                <div className='Operant2'>{operantTwo}</div>
 
                 <div className='calculator'>
                     <div className='btns'>
