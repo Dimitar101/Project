@@ -1,4 +1,4 @@
-###### Project’s Title: dd!
+#Project’s Title: dd!
 
 'dd!' is an interactive online learning platform designed to help kids grow their skills at their own pace, while also providing the inspiration needed to do so. With quizzes and practice modules, 'dd!' makes learning engaging, flexible, and effective—anytime, anywhere.
 
@@ -9,7 +9,7 @@ To get the Project to work one needs a 'npm i' globally for the Project. A pract
 The **server** is credited to: https://github.com/softuni-practice-server/softuni-practice-server?tab=readme-ov-file#services
 
 The Project uses React + Vite for the client side.
-# React + Vite
+### React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
