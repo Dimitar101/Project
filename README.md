@@ -1,4 +1,4 @@
-#Project’s Title: dd!
+# Project’s Title: dd!
 
 'dd!' is an interactive online learning platform designed to help kids grow their skills at their own pace, while also providing the inspiration needed to do so. With quizzes and practice modules, 'dd!' makes learning engaging, flexible, and effective—anytime, anywhere.
 
