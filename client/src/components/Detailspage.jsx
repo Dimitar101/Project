@@ -7,10 +7,12 @@ export default function Detailspage(prop) {
     const quoteBoxID = prop.detailsState.quoteBoxID_G;
     const userData = prop.detailsState.currState;
 
-    const [quoteData, setQuoteData] = useState([]);
-
     const navigate = useNavigate();
 
+
+
+
+    const [quoteData, setQuoteData] = useState([]);
 
     // Protect direct /detailspage user entry.
     if (quoteBoxID === undefined) {
@@ -31,8 +33,6 @@ export default function Detailspage(prop) {
         );
     }
 
-
-    // Quote data fetch.
     useEffect(() => {
         fetch(data_URL + '/' + quoteBoxID)
             .then(res => res.json())
@@ -41,6 +41,8 @@ export default function Detailspage(prop) {
                 console.log(err.message);
             });
     }, []);
+
+
 
 
     const editClick = () => {
@@ -59,69 +61,9 @@ export default function Detailspage(prop) {
     }
 
 
-    // Like
-    const [likesCountForThisQuote, setLikesCountForThisQuote] = useState(0);
-
-    useEffect(() => {
-        fetch('http://localhost:3030/data/likes')
-            .then(res => res.json())
-            .then(likesData => {
-                Object.values(likesData);
-                let count = 0;
-                for (const likeObj of likesData) {
-                    if (likeObj.quoteId == quoteBoxID) {
-                        count++;
-                    }
-                }
-                setLikesCountForThisQuote(count);
-            })
-            .catch(err => {
-                console.log(err.message);
-            });
-    });
-
-
     const likeClick = async () => {
-        // Actual liking.
-        await fetch('http://localhost:3030/data/likes', {
-            method: 'POST',
-            headers: { 'X-Authorization': userData.accessToken },
-            body: JSON.stringify({ quoteId: quoteBoxID }),
-        });
-        setLikesCountForThisQuote(likesCountForThisQuote + 1);
+        console.log(999);
     }
-
-
-    const [alreadyLiked, setAlreadyLiked] = useState(false);
-    function likeComponent() {
-        fetch('http://localhost:3030/data/likes')
-            .then(res => res.json())
-            .then(likesData => {
-                Object.values(likesData);
-                for (const likeObj of likesData) {
-                    // Get all the likes made by the User.
-                    if (userData.userID == likeObj._ownerId) {
-                        // Check if the curr Quote is among the quotes liked by the User.
-                        if (quoteBoxID == likeObj.quoteId) {
-                            setAlreadyLiked(true);
-                            return;
-                        }
-                    }
-                }
-            })
-            .catch(err => {
-                console.log(err.message);
-            });
-
-
-        return (
-            alreadyLiked ?
-                <p className="liked-message">You liked this Quote.</p> :
-                <button className="likeBtn" onClick={likeClick}>Like</button>
-        );
-    }
-
-
 
 
     return (
@@ -140,7 +82,9 @@ export default function Detailspage(prop) {
                 <p className="detailsP">{quoteData.details}</p>
                 <br />
 
-                <p className="likes">likes: {likesCountForThisQuote}</p>
+
+                <p className="likes">likes: 0</p>
+
                 {
                     userData.accessToken ?
                         <div>
@@ -150,7 +94,7 @@ export default function Detailspage(prop) {
                                         <button className="editBtn" onClick={editClick}>Edit</button>
                                         <button className="deleteBtn" onClick={deleteClick}>Delete</button>
                                     </div> :
-                                    likeComponent()
+                                    <button className="likeBtn" onClick={likeClick}>Like</button>
                             }
                         </div> : null
                 }

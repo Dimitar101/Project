@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 export default function Edit(prop) {
     const quoteBoxID = prop.editState.quoteBoxID_G;
     const userData = prop.editState.currState;
-
+    
     const [quoteData, setQuoteData] = useState([]);
     const navigate = useNavigate();
 
@@ -17,7 +17,7 @@ export default function Edit(prop) {
 
     const submitEdit = async (formData) => {
         const formInfo = Object.fromEntries(formData);
-        // console.log(formInfo);      // Object { quote: "x", quoteAuthor: "x", details: "x" }
+        // console.log(formInfo);      // Object { quote: "11", quoteAuthor: "11", details: "11" }
 
         const newQuote = formInfo.quote ? formInfo.quote : quoteData.quote;
         const newDetails = formInfo.details ? formInfo.details : quoteData.details;
@@ -55,31 +55,31 @@ export default function Edit(prop) {
                     <h1 className='addquoteHeader'>Edit Your Quote</h1>
                     <br />
 
-                    <p className='as-is'>The Quote Currently:</p>
+                    <p className='as-is'>The Quote as is:</p>
                     <hr />
                     <p>{quoteData.quote}</p>
                     <hr />
                     <br />
                     <br />
-                    <label htmlFor="quote">New version of the Quote here:</label>
+                    <label htmlFor="quote">Edit Quote Here:</label>
                     <textarea name="quote" id="quote"></textarea>
 
-                    <p className='as-is'>The Quote Author Currently:</p>
+                    <p className='as-is'>The Quote Author as is:</p>
                     <hr />
                     <p>{quoteData.quoteAuthor}</p>
                     <hr />
                     <br />
                     <br />
-                    <label htmlFor="quoteAuthor">New version of the Quote Author here:</label>
+                    <label htmlFor="quoteAuthor">Edit Quote Author Here:</label>
                     <input type="text" id="quoteAuthor" name="quoteAuthor" placeholder="Enter quote author..." />
 
-                    <p className='as-is'>The Details Currently:</p>
+                    <p className='as-is'>The Details as are:</p>
                     <hr />
                     <p>{quoteData.details}</p>
                     <hr />
                     <br />
                     <br />
-                    <label htmlFor="details">New version of the Quote Details here:</label>
+                    <label htmlFor="details">Edit Details Here:</label>
                     <textarea name="details" id="details"></textarea>
 
                     <input className="btn submit" type="submit" value="Submit Edited Version" />
