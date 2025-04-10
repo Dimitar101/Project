@@ -4,7 +4,7 @@
 
 
 
-To get the Project to work one needs a 'npm i' globally for the Project. A practise server is provided with the files. Then the Client and Server are opened separately in two integrated Terminals. The Client integrated terminal requires 'npm run dev' and the Server integrated terminal requires 'node server.js'!!!
+To get the Project to work a practise server is provided with the files. The Client and Server fiels are opened separately in two integrated Terminals. The Client integrated terminal requires 'npm i' and 'npm run dev' and the Server integrated terminal requires 'node server.js'.
 
 The **server** is credited to: https://github.com/softuni-practice-server/softuni-practice-server?tab=readme-ov-file#services
 
