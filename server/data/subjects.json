@@ -1,17 +1,20 @@
 {
     "subject_1": {
         "_id": "subject_1",
-        "subject": "Aritmetics",
+        "subject": "Котка",
+        "answer": "Cat",
         "isPractised": false
     },
     "subject_2": {
         "_id": "subject_2",
-        "subject": "Chessling",
+        "subject": "Куче",
+        "answer": "Dog",
         "isPractised": false
     },
     "subject_3": {
         "_id": "subject_3",
-        "subject": "Geo",
+        "subject": "Риба",
+        "answer": "Fish",
         "isPractised": false
     }
 }
