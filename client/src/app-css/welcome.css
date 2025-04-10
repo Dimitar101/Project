@@ -38,3 +38,19 @@ thead {
     font-family: 'Times New Roman', Times, serif;
     color: yellow;
 }
+
+.explain-welcome {
+    color: rgb(0, 255, 34);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: larger;
+    text-align: center;
+}
+
+.questionWord {
+    color: white;
+}
+
+.answerWord {
+    color: rgb(212, 37, 23);
+}
