@@ -37,8 +37,9 @@ export default function Welcome() {
 
     return (
         <>
-            <h1 className="welcome-heading">Have you practised?</h1>
+            <h1 className="welcome-heading">Quick Dictionary</h1>
             <hr />
+            <p className="explain-welcome">(Use this tool for quick learning only, once you navigate from the page the dictionary answers will close again.)</p>
 
             <div className="table-wrapper">
                 <table>
@@ -48,6 +49,7 @@ export default function Welcome() {
                                 key={subj._id}
                                 _id={subj._id}
                                 subject={subj.subject}
+                                answer={subj.answer}
                                 isPractised={subj.isPractised}
                                 onStatusChangeAfterToggleBtnClick={statusChangeHandler}
                             />
