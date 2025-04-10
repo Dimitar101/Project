@@ -9,8 +9,8 @@ const navigation = [
 ];
 
 
-function navs(userDataX, navigationX) {
-    if (userDataX) {
+function navs(accessTokenX, navigationX) {
+    if (accessTokenX) {
         return <NavLink to='/logout'>Logout Portal</NavLink>
     } else {
         return navigationX.map((item) => (
@@ -23,12 +23,11 @@ function navs(userDataX, navigationX) {
 
 
 export default function Header(prop) {
-    // const userData = JSON.parse(sessionStorage.getItem('userData'));
     const userData = prop.currState;
 
     useEffect(() => {
         //
-    }, [prop.currState]);
+    }, [prop.currState.accessToken]);
 
 
     return (
@@ -40,13 +39,13 @@ export default function Header(prop) {
                             <img src={logo} />
                         </NavLink>
                     </div>
-                    {userData && <div className='who'>Logged in as: {userData.email}</div>}
+                    {userData.accessToken && <div className='who'>Logged in as: {userData.email}</div>}
                 </div>
 
                 <div id="container-nav">
                     <nav className="main-nav">
                         <ul>
-                            {navs(userData, navigation)}
+                            {navs(userData.accessToken, navigation)}
                         </ul>
                     </nav>
                 </div>
@@ -54,4 +53,3 @@ export default function Header(prop) {
         </>
     );
 }
-//111111111

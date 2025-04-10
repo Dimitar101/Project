@@ -2,11 +2,8 @@
   margin: 0;
 }
 
-/* html {
-  font: 12px/1.5 Poppins, sans-serif;
-} */
-
 body {
-  /* background-color: #817f80; */
-  background-color: #595959;
+  font-size: 100%;
+  font-family: 'Lora', serif;
+  background: #474747;
 }

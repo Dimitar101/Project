@@ -14,7 +14,6 @@
     margin-bottom: 4em;
 }
 
-
 .instr {
     display: flex;
     justify-content: center;
@@ -37,7 +36,6 @@
 .row {
     display: flex;
     justify-content: center;
-    /* width: 50em; */
     margin: 0 400px 0 400px;
 }
 
@@ -46,7 +44,6 @@
     padding-bottom: 8%;
     background-color: red;
 }
-
 
 .white {
     background-color: white;
@@ -58,9 +55,4 @@
 
 .red {
     background-color: rgba(214, 15, 15, 0.767);
-
 }
-
-/* .yellow {
-    background-color: rgba(190, 190, 29, 0.685);
-} */

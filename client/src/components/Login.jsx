@@ -34,7 +34,6 @@ export default function Login(prop) {
         const data = await response.json();
 
         const userData = { email: data.email, accessToken: data.accessToken, userID: data._id };
-        // sessionStorage.setItem('userData', JSON.stringify(userData));
 
         setPending(false);
         prop.setCurrState(userData);
@@ -85,4 +84,3 @@ export default function Login(prop) {
         </>
     );
 }
-//111111111

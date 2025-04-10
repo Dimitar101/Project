@@ -66,7 +66,7 @@ export default function Arithmetic() {
     const digits = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'];
     const operations = ['+', '-', '*', '/'];
 
-    
+
     return (
         <>
             <div className='calculator-wrapper'>

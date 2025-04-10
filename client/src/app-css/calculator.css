@@ -10,7 +10,6 @@
     font-size: xx-large;
 }
 
-
 .multiplicationOperation,
 .Operator {
     color: rgb(32, 190, 196);
@@ -46,9 +45,7 @@
 }
 
 .operationsBtns {
-    /* display: flex; */
     margin-left: 26px;
-    /* margin-right: auto; */
 }
 
 .calculator button {

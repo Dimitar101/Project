@@ -15,6 +15,10 @@ import './app-css/calculator.css'
 import './app-css/welcome.css'
 import './app-css/ch.css'
 import './app-css/confirmLogout.css'
+import './app-css/geo.css'
+import './app-css/addquote.css'
+import './app-css/detailspage.css'
+import './app-css/notFound.css'
 
 
 import Header from './components/Header'
@@ -26,10 +30,22 @@ import Welcome from './components/Welcome'
 import Geo from './components/Geo'
 import Logout from './components/Logout'
 import Register from './components/Register'
+import Addquote from './components/Addquote'
+import Detailspage from './components/Detailspage'
+import Edit from './components/Edit'
+import NotFound from './components/NotFound'
 
-//111111111
+
 export default function App() {
-    const [currState, setCurrState] = useState();
+    const [currState, setCurrState] = useState(
+        {
+            email: null,
+            accessToken: null,
+            userID: null
+        }
+    );
+
+    const [quoteBoxID_G, setQuoteBoxID_G] = useState();
 
 
     return (
@@ -38,13 +54,17 @@ export default function App() {
 
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/calculator" element={<Calculator currState={currState}/>} />
+                <Route path="/calculator" element={<Calculator currState={currState} />} />
                 <Route path="/chessling" element={<Ch />} />
-                <Route path="/geo" element={<Geo />} />
+                <Route path="/geo" element={<Geo geoState={{ currState: currState, setQuoteBoxID_G: setQuoteBoxID_G }} />} />
                 <Route path="/login" element={<Login setCurrState={setCurrState} />} />
                 <Route path="/register" element={<Register setCurrState={setCurrState} />} />
                 <Route path="/welcome" element={<Welcome />} />
                 <Route path="/logout" element={<Logout appState={{ currState: currState, setCurrState: setCurrState }} />} />
+                <Route path="/addquote" element={<Addquote currState={currState} />} />
+                <Route path="/detailspage" element={<Detailspage detailsState={{ quoteBoxID_G: quoteBoxID_G, currState: currState }} />} />
+                <Route path="/edit" element={<Edit editState={{ quoteBoxID_G: quoteBoxID_G, currState: currState }} />} />
+                <Route path="*" element={<NotFound />} />
             </Routes>
         </>
     );

@@ -7,7 +7,7 @@ export default function Login(prop) {
     const [email, setemail] = useState('');
     const [password, setPassword] = useState('');
     const [repassword, setRepassword] = useState('');
-    
+
     const navigate = useNavigate();
 
 
@@ -35,7 +35,6 @@ export default function Login(prop) {
         const data = await response.json();
 
         const userData = { email: data.email, accessToken: data.accessToken, userID: data._id };
-        // sessionStorage.setItem('userData', JSON.stringify(userData));
 
         setPending(false);
         prop.setCurrState(userData);
@@ -84,7 +83,7 @@ export default function Login(prop) {
                 <div>
                     <label htmlFor="repassword">Repeat Password:</label>
                     <input
-                        type="repassword"
+                        type="password"
                         id="repassword"
                         name="repasswordName"
                         onChange={repasswordChangeHandler}
@@ -101,4 +100,3 @@ export default function Login(prop) {
         </>
     );
 }
-//111111111

@@ -1,0 +1,85 @@
+blockquote {
+    margin: 3.7em auto;
+    padding: 2em;
+    background: linear-gradient(white, white) padding-box, url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/80625/sea.jpg) border-box 0 / cover;
+    border: 2em solid transparent;
+    box-shadow: 5px 3px 30px black;
+    font-size: 1.4em;
+    /* font-family: 'Lora', serif; */
+    font-style: italic;
+    line-height: 1.5;
+    width: 50%;
+}
+
+.detailsFooter {
+    padding-top: 1.3em;
+}
+
+.detailsP {
+    font-style: normal;
+    color: #474747;
+}
+
+cite {
+    font-style: normal;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.likes {
+    display: flex;
+    justify-content: center;
+}
+
+/* @import url(https://fonts.googleapis.com/css?family=Lora); */
+
+.editBtn,
+.deleteBtn,
+.likeBtn {
+    background-color: #FF4B5C;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.likeBtn {
+    background-color: rgb(0, 163, 0);
+}
+
+.likeBtn:hover {
+    background-color: green;
+}
+
+.editBtn:hover,
+.deleteBtn:hover {
+    background-color: #ce3844;
+}
+
+.editBtn:focus,
+.deleteBtn:focus {
+    outline: none;
+}
+
+.editANDdeleteBts {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.backToALL {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    /* margin-top: 5px; */
+}
+
+.liked-message {
+    color: rgb(0, 163, 0);
+}

@@ -1,4 +1,4 @@
-import bildboard from '../assets/untitled.jpg'
+import bildboard from '../assets/bildboardViolin.jpg'
 
 
 export default function Bildboard() {

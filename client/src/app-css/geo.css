@@ -1,0 +1,54 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 450px;
+}
+
+.geo-p {
+    color: pink;
+    font-size: x-large;
+    /* text-align: center; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.geo-addBtn {
+    color: rgb(214, 214, 3);
+    background-color: rgb(141, 136, 136);
+    font-size: large;
+    border-radius: 12px;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.allQuotes-header {
+    color: #007bff;
+    margin-top: 20px;
+    font-style: oblique;
+    text-decoration-line: underline;
+}
+
+.quotes-vessel {
+    padding: 20px;
+}
+
+.quoteBox {
+    background-color: aliceblue;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 20px;
+    max-width: 500px;
+}
+
+.quote {
+    margin-top: 20px;
+    font-style: italic;
+    font-size: x-large;
+}
+
+.detailBtn {
+    margin-top: 10px;
+}

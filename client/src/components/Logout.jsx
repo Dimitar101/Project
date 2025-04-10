@@ -3,9 +3,8 @@ import { useNavigate } from "react-router";
 
 export default function Logout(prop) {
     const navigate = useNavigate();
-    
+
     async function confirmLogout() {
-        // const userData = JSON.parse(sessionStorage.getItem('userData'));
         const userData = prop.appState.currState;
 
         await fetch('http://localhost:3030/users/logout', {
@@ -13,8 +12,13 @@ export default function Logout(prop) {
             headers: { 'X-Authorization': userData.accessToken },
         });
 
-        // sessionStorage.removeItem('userData');
-        prop.appState.setCurrState();
+        prop.appState.setCurrState(
+            {
+                email: null,
+                accessToken: null,
+                userID: null
+            }
+        );
         navigate('/');
     }
 
@@ -28,4 +32,3 @@ export default function Logout(prop) {
         </>
     );
 }
-//111111111

@@ -9,14 +9,12 @@
     flex-direction: column;
 }
 
-
 .confirm-p {
     font-size: 25px;
     color: #333;
     margin-bottom: 20px;
     text-align: center;
 }
-
 
 .confirm-btn {
     background-color: #FF4B5C;
@@ -29,11 +27,9 @@
     transition: background-color 0.3s ease;
 }
 
-
 .confirm-btn:hover {
     background-color: #E0414D;
 }
-
 
 .confirm-btn:focus {
     outline: none;

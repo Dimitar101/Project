@@ -2,7 +2,7 @@
     "1": {
         "gameName": "Calculator",
         "img": "../../src/assets/calc.jpg",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "description": "Practicing arithmetic and multiplication for young learners, emphasizing simplicity and fun – very easy and super engaging.",
         "path": "/calculator"
     },
     "2": {
@@ -12,9 +12,9 @@
         "path": "/chessling"
     },
     "3": {
-        "gameName": "Geo",
+        "gameName": "Geo - Inspirational Quotes",
         "img": "../../src/assets/geo.jpg",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "description": "Browse, upload, and like inspirational quotes that uplift and motivate. Join a community that spreads positivity daily.",
         "path": "/geo"
     }
 }

@@ -2,7 +2,6 @@ import { useState } from 'react';
 
 
 export default function Multiplication(prop) {
-    // const userData = JSON.parse(sessionStorage.getItem('userData'));
     const userData = prop.currState;
 
     const [multiplicand, setMultiplicand] = useState('...');
@@ -29,7 +28,7 @@ export default function Multiplication(prop) {
 
     return (
         <>
-            {userData ?
+            {userData.accessToken ?
                 <div className='calculator-wrapper'>
                     <div className='multiplicand'>{multiplicand}</div>
                     <div className='multiplicationOperation'>*</div>
@@ -54,4 +53,3 @@ export default function Multiplication(prop) {
         </>
     );
 }
-// #1111111

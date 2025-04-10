@@ -54,7 +54,7 @@ export default function Calculator(prop) {
             </form>
 
             {values.arithmeticName && <Arithmetic />}
-            {values.multiplicationName && <Multiplication currState={prop.currState}/>}
+            {values.multiplicationName && <Multiplication currState={prop.currState} />}
         </>
     );
 }
